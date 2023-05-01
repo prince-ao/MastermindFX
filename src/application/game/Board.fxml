@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="1391.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" layoutX="229.0" layoutY="159.0" prefHeight="500.0" prefWidth="1065.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="168.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="168.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="168.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="168.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="168.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="168.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="168.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="168.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="168.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="168.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#1f93ff00" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#4c84b600" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="6.0" layoutY="32.0" prefHeight="637.0" prefWidth="202.0">
+         <children>
+            <Circle radius="27.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.830188679032221" endY="0.14150950753468827" startX="0.32075473141168986" startY="0.7971698103169471">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.11999999731779099" green="1.0" blue="0.17699046432971954" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle radius="27.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.830188679032221" endY="0.14150950753468827" startX="0.32075473141168986" startY="0.7971698103169471">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.11999999731779099" green="0.24739032983779907" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle radius="27.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.830188679032221" endY="0.14150950753468827" startX="0.32075473141168986" startY="0.7971698103169471">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9346285462379456" green="1.0" blue="0.11999999731779099" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle radius="27.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.830188679032221" endY="0.14150950753468827" startX="0.32075473141168986" startY="0.7971698103169471">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5289908647537231" green="0.11999999731779099" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle radius="27.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.830188679032221" endY="0.14150950753468827" startX="0.32075473141168986" startY="0.7971698103169471">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.11999999731779099" blue="0.11999999731779099" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</AnchorPane>

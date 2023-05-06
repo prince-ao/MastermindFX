@@ -5,6 +5,7 @@ import application.utils.View;
 import javafx.scene.Scene;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
+import javafx.scene.paint.Color;
 
 public class MastermindController {
 	private static Stage mainStage;
@@ -17,6 +18,8 @@ public class MastermindController {
 		MainMenuView v = new MainMenuView();
 		Parent mainMenu = v.getView();
 		Scene root = new Scene(mainMenu);
+		root.setFill(Color.WHITE);
+
 		mainStage.setScene(root);
 		mainStage.setFullScreenExitHint("");
 		mainStage.setFullScreen(true);
@@ -29,7 +32,11 @@ public class MastermindController {
 			mainStage.getScene().setRoot(p);
 		}catch(Exception e) {
 			System.err.println("Error while switchign to " + v.getName());
+			e.printStackTrace();
 		}
-		
+	}
+	
+	public static Stage getStage() {
+		return mainStage;
 	}
 }

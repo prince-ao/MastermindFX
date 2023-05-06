@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="978.0" prefWidth="1596.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.game.ColorChoiceController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="213.0" prefWidth="1596.0">
+         <VBox.margin>
+            <Insets bottom="200.0" />
+         </VBox.margin>
+         <children>
+            <Circle onMouseDragged="#handlePegDrag" onMousePressed="#startPegDrag" onMouseReleased="#endPegDrag" radius="35.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.830188679032221" endY="0.14150950753468827" startX="0.32075473141168986" startY="0.7971698103169471">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.11999999731779099" green="1.0" blue="0.17699046432971954" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin></Circle>
+            <Circle onMouseDragged="#handlePegDrag" onMousePressed="#startPegDrag" onMouseReleased="#endPegDrag" radius="35.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.830188679032221" endY="0.14150950753468827" startX="0.32075473141168986" startY="0.7971698103169471">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.11999999731779099" green="0.24739032983779907" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Circle>
+            <Circle onMouseDragged="#handlePegDrag" onMousePressed="#startPegDrag" onMouseReleased="#endPegDrag" radius="35.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.830188679032221" endY="0.14150950753468827" startX="0.32075473141168986" startY="0.7971698103169471">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9346285462379456" green="1.0" blue="0.11999999731779099" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Circle>
+            <Circle onMouseDragged="#handlePegDrag" onMousePressed="#startPegDrag" onMouseReleased="#endPegDrag" radius="35.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.830188679032221" endY="0.14150950753468827" startX="0.32075473141168986" startY="0.7971698103169471">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5289908647537231" green="0.11999999731779099" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Circle>
+            <Circle onMouseDragged="#handlePegDrag" onMousePressed="#startPegDrag" onMouseReleased="#endPegDrag" radius="35.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="0.830188679032221" endY="0.14150950753468827" startX="0.32075473141168986" startY="0.7971698103169471">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.11999999731779099" blue="0.11999999731779099" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="126.0" prefWidth="1596.0">
+         <children>
+            <AnchorPane prefHeight="136.0" prefWidth="107.0">
+               <children>
+                  <Circle fx:id="Hole1" fill="#ffffff00" layoutX="54.0" layoutY="63.0" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#ffffff00" layoutX="54.0" layoutY="63.0" onMouseClicked="#printLocation" radius="43.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="136.0" prefWidth="107.0">
+               <children>
+                  <Circle fx:id="Hole2" fill="#ffffff00" layoutX="54.0" layoutY="63.0" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#ffffff00" layoutX="54.0" layoutY="63.0" onMouseClicked="#printLocation" radius="43.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="136.0" prefWidth="107.0">
+               <children>
+                  <Circle fx:id="Hole3" fill="#ffffff00" layoutX="54.0" layoutY="63.0" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#ffffff00" layoutX="54.0" layoutY="63.0" onMouseClicked="#printLocation" radius="43.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="136.0" prefWidth="107.0">
+               <children>
+                  <Circle fx:id="Hole4" fill="#ffffff00" layoutX="54.0" layoutY="63.0" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#ffffff00" layoutX="54.0" layoutY="63.0" onMouseClicked="#printLocation" radius="43.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+         </children></HBox>
+   </children>
+</VBox>

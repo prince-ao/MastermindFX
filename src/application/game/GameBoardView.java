@@ -10,7 +10,7 @@ public class GameBoardView implements View {
 	}
 
 	public Parent getView() throws Exception {
-		return FXMLLoader.load(getClass().getResource("Board.fxml"));
+		return FXMLLoader.load(getClass().getResource("ColorChoice.fxml"));
 		
 	}
 }

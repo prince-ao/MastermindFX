@@ -15,15 +15,50 @@ import javafx.scene.layout.VBox;
 import javafx.scene.layout.HBox;
 import javafx.scene.shape.StrokeType;
 import javafx.scene.Node;
+import javafx.scene.text.Text;
+import javafx.scene.layout.GridPane;
 import javafx.collections.ObservableList;
+import javafx.scene.text.Font;
 import application.MastermindController;
+import java.util.List;
 
 public class GameBoardController {
+	
+	
+	@FXML
+	GridPane box1;
+	@FXML
+	GridPane box2;
+	@FXML
+	GridPane box3;
+	@FXML
+	GridPane box4;
+	@FXML
+	GridPane box5;
+	@FXML
+	GridPane box6;
+	@FXML
+	GridPane box7;
+	@FXML
+	GridPane box8;
+	@FXML
+	GridPane box9;
+	@FXML
+	GridPane box10;
+	@FXML
+	HBox TextScreen;
+	
 
 	private int currentCol = 0;
 	private Paint selected;
 	private Circle selectedCircle;
 	private ObservableList<Node> children;
+	private List<Paint> choices;
+	
+	public GameBoardController() { }
+	public GameBoardController(List data) {
+		choices = data;
+	}
 	
 	@FXML
 	public void handlePegClick(MouseEvent e) {
@@ -82,7 +117,6 @@ public class GameBoardController {
 						0.14150950753468827, 
 						true, 
 						CycleMethod.NO_CYCLE, stops);
-				System.out.println("slected");
 				break;
 			case "pegTwo":
 				stops = new Stop[] { new Stop(0, Color.rgb(31, 63, 255)), new Stop(1, Color.WHITE)};
@@ -154,7 +188,116 @@ public class GameBoardController {
 			if(((Circle)((AnchorPane)((HBox)h).getChildren().get(0)).getChildren().get(1)).getFill().equals(Color.color(1.0, 1.0, 1.0, 0.0)))
 				allSelected = false;
 		}
-		if(allSelected) currentCol++;
+		if(allSelected) {
+			ObservableList<Node> children = ((VBox)((HBox)((AnchorPane) e.getSource()).getParent()).getParent()).getChildren();
+			Circle c1 = ((Circle)((AnchorPane)((HBox)children.get(0)).getChildren().get(0)).getChildren().get(1));
+			Circle c2 = ((Circle)((AnchorPane)((HBox)children.get(1)).getChildren().get(0)).getChildren().get(1));
+			Circle c3 = ((Circle)((AnchorPane)((HBox)children.get(2)).getChildren().get(0)).getChildren().get(1));
+			Circle c4 = ((Circle)((AnchorPane)((HBox)children.get(3)).getChildren().get(0)).getChildren().get(1));
+			
+			boolean c1c = choices.get(0).toString().equals(c1.getFill().toString());
+			boolean c2c = choices.get(1).toString().equals(c2.getFill().toString());
+			boolean c3c = choices.get(2).toString().equals(c3.getFill().toString());
+			boolean c4c = choices.get(3).toString().equals(c4.getFill().toString());
+			
+			int k = 0;
+
+			if(c1c) k++;
+			if(c2c) k++;
+			if(c3c) k++;
+			if(c4c) k++;
+			
+			String colId = ((VBox)((HBox)((AnchorPane) e.getSource()).getParent()).getParent()).getId();
+			ObservableList<Node> child;
+			int counter = 0;
+			switch(colId) {
+				case "col1":
+					child = box1.getChildren();
+					for (Node c : child) {
+						if(counter++ == k) break;
+						((Circle)c).setFill(Color.BLACK);
+					};
+					break;
+				case "col2":
+					child = box2.getChildren();
+					for (Node c : child) {
+						if(counter++ == k) break;
+						((Circle)c).setFill(Color.BLACK);
+					};
+					break;
+				case "col3":
+					child = box3.getChildren();
+					for (Node c : child) {
+						if(counter++ == k) break;
+						((Circle)c).setFill(Color.BLACK);
+					};
+					break;
+				case "col4":
+					child = box4.getChildren();
+					for (Node c : child) {
+						if(counter++ == k) break;
+						((Circle)c).setFill(Color.BLACK);
+					};
+					break;
+				case "col5":
+					child = box5.getChildren();
+					for (Node c : child) {
+						if(counter++ == k) break;
+						((Circle)c).setFill(Color.BLACK);
+					};
+					break;
+				case "col6":
+					child = box6.getChildren();
+					for (Node c : child) {
+						if(counter++ == k) break;
+						((Circle)c).setFill(Color.BLACK);
+					};
+					break;
+				case "col7":
+					child = box7.getChildren();
+					for (Node c : child) {
+						if(counter++ == k) break;
+						((Circle)c).setFill(Color.BLACK);
+					};
+					break;
+				case "col8":
+					child = box8.getChildren();
+					for (Node c : child) {
+						if(counter++ == k) break;
+						((Circle)c).setFill(Color.BLACK);
+					};
+					break;
+				case "col9":
+					child = box9.getChildren();
+					for (Node c : child) {
+						if(counter++ == k) break;
+						((Circle)c).setFill(Color.BLACK);
+					};
+					break;
+				case "col10":
+					child = box10.getChildren();
+					for (Node c : child) {
+						if(counter++ == k) break;
+						((Circle)c).setFill(Color.BLACK);
+					};
+					break;
+			}
+
+			if(k == 4) {
+				Text t = new Text("Player 1 Won!");
+				double fontSize = 35;
+		        t.setFont(Font.font(fontSize));
+				TextScreen.getChildren().add(t);
+				// switch screens
+			}
+				
+			currentCol++;
+			if(counter == 10) {
+				Text t = new Text("Player 1 Lost!");
+				TextScreen.getChildren().add(t);
+				// switch screens
+			}
+		}
 		
 		selected = null;
 	}

@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
 import javafx.scene.paint.Color;
+import java.util.List;
 
 public class MastermindController {
 	private static Stage mainStage;
@@ -16,7 +17,7 @@ public class MastermindController {
 	
 	public void startGame() throws Exception {
 		MainMenuView v = new MainMenuView();
-		Parent mainMenu = v.getView();
+		Parent mainMenu = v.getView(null);
 		Scene root = new Scene(mainMenu);
 		root.setFill(Color.WHITE);
 
@@ -26,9 +27,9 @@ public class MastermindController {
 		mainStage.show();
 	}
 
-	public static void switchView(View v) {
+	public static void switchView(View v, List data) {
 		try {
-			Parent p = v.getView();
+			Parent p = v.getView(data);
 			mainStage.getScene().setRoot(p);
 		}catch(Exception e) {
 			System.err.println("Error while switchign to " + v.getName());

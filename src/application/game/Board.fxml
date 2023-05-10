@@ -2,7 +2,10 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
@@ -108,449 +111,654 @@
             <Insets />
          </opaqueInsets>
       </VBox>
-      <HBox alignment="CENTER" prefHeight="1096.0" prefWidth="1341.0">
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
          <children>
-            <VBox id="col1" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+            <HBox prefHeight="101.0" prefWidth="1032.0">
                <children>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                  <GridPane fx:id="box1" alignment="CENTER" gridLinesVisible="true" prefHeight="102.0" prefWidth="97.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
                      <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                      </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                     <HBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </GridPane>
+                  <GridPane fx:id="box2" alignment="CENTER" gridLinesVisible="true" prefHeight="102.0" prefWidth="97.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
                      <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                      </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                     <HBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </GridPane>
+                  <GridPane fx:id="box3" alignment="CENTER" gridLinesVisible="true" prefHeight="102.0" prefWidth="97.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
                      <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                      </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                     <HBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </GridPane>
+                  <GridPane fx:id="box4" alignment="CENTER" gridLinesVisible="true" prefHeight="102.0" prefWidth="97.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
                      <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                      </children>
-                  </HBox>
+                     <HBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </GridPane>
+                  <GridPane fx:id="box5" alignment="CENTER" gridLinesVisible="true" prefHeight="102.0" prefWidth="97.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </GridPane>
+                  <GridPane fx:id="box6" alignment="CENTER" gridLinesVisible="true" prefHeight="102.0" prefWidth="97.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </GridPane>
+                  <GridPane fx:id="box7" alignment="CENTER" gridLinesVisible="true" prefHeight="102.0" prefWidth="97.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </GridPane>
+                  <GridPane fx:id="box8" alignment="CENTER" gridLinesVisible="true" prefHeight="102.0" prefWidth="97.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </GridPane>
+                  <GridPane fx:id="box9" alignment="CENTER" gridLinesVisible="true" prefHeight="102.0" prefWidth="97.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </GridPane>
+                  <GridPane fx:id="box10" alignment="CENTER" gridLinesVisible="true" prefHeight="102.0" prefWidth="97.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+                        <Circle fill="#ffffff00" radius="15.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </GridPane>
                </children>
-            </VBox>
-            <VBox id="col2" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                  <VBox id="col1" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
                      <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
                            <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
                            </children>
-                        </AnchorPane>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
                      </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                  </VBox>
+                  <VBox id="col2" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
                      <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
                            <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
                            </children>
-                        </AnchorPane>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
                      </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                  </VBox>
+                  <VBox id="col3" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
                      <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
                            <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
                            </children>
-                        </AnchorPane>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
                      </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                  </VBox>
+                  <VBox id="col4" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
                      <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
                            <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
                            </children>
-                        </AnchorPane>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
                      </children>
-                  </HBox>
+                  </VBox>
+                  <VBox id="col5" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox id="col6" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox id="col7" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox id="col8" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox id="col9" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox id="col10" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
+                           <children>
+                              <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
+                                 <children>
+                                    <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
                </children>
-            </VBox>
-            <VBox id="col3" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
-               <children>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
-            <VBox id="col4" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
-               <children>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
-            <VBox id="col5" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
-               <children>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
-            <VBox id="col6" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
-               <children>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
-            <VBox id="col7" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
-               <children>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
-            <VBox id="col8" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
-               <children>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
-            <VBox id="col9" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
-               <children>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
-            <VBox id="col10" alignment="CENTER" prefHeight="397.0" prefWidth="122.0">
-               <children>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" maxHeight="200.0" maxWidth="100.0" minHeight="200.0" minWidth="100.0">
-                     <children>
-                        <AnchorPane maxHeight="86.0" maxWidth="57.0" minHeight="16.0" minWidth="56.0" onMouseClicked="#handleHoleClick" prefHeight="16.0" prefWidth="57.0">
-                           <children>
-                              <Circle id="largeHole" fill="#4c84b600" layoutX="27.0" layoutY="43.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
-                              <Circle id="smallHole" fill="#ffffff00" layoutX="27.0" layoutY="43.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="TextScreen" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
          </children>
-      </HBox>
+      </VBox>
    </children>
 </HBox>

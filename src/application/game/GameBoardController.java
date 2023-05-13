@@ -19,6 +19,8 @@ import javafx.scene.text.Text;
 import javafx.scene.layout.GridPane;
 import javafx.collections.ObservableList;
 import javafx.scene.text.Font;
+import javafx.animation.PauseTransition;
+import javafx.util.Duration;
 import application.MastermindController;
 import java.util.List;
 
@@ -284,16 +286,27 @@ public class GameBoardController {
 			}
 
 			if(k == 4) {
-				Text t = new Text("Player 1 Won!");
+				int points = 10 - currentCol;
+				Text t = new Text(MastermindController.getCurrentPlayer() + " Won " + points + " points!");
+				MastermindController.incrementPlayer();
 				double fontSize = 35;
 		        t.setFont(Font.font(fontSize));
 				TextScreen.getChildren().add(t);
-				// switch screens
+				PauseTransition pause = new PauseTransition(Duration.seconds(5));
+				pause.setOnFinished(ss -> {
+					if(MastermindController.getRounds() == 2) {
+						System.out.println("Game Over!");
+					}else {
+						MastermindController.switchView(new ColorChoiceView(), null);
+					}
+	            });
+				pause.play();
 			}
 				
 			currentCol++;
 			if(counter == 10) {
-				Text t = new Text("Player 1 Lost!");
+				Text t = new Text(MastermindController.getCurrentPlayer() + " Lost!");
+				MastermindController.incrementPlayer();
 				TextScreen.getChildren().add(t);
 				// switch screens
 			}

@@ -5,11 +5,17 @@ import application.utils.View;
 import javafx.scene.Scene;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
+import javafx.scene.Cursor;
+import javafx.scene.ImageCursor;
 import javafx.scene.paint.Color;
+import javafx.scene.image.Image;
 import java.util.List;
 
 public class MastermindController {
 	private static Stage mainStage;
+	private static String[] players = {"Player 1", "Player 2"};
+	private static int curr = 0;
+	private static int rounds = 1;
 
 	public MastermindController(Stage stage) {
 		mainStage = stage;
@@ -20,6 +26,12 @@ public class MastermindController {
 		Parent mainMenu = v.getView(null);
 		Scene root = new Scene(mainMenu);
 		root.setFill(Color.WHITE);
+		Image image = new Image("assets/images/cursor.png");
+		Cursor cursor = new ImageCursor(image);
+
+		root.setCursor(cursor);
+		root.getStylesheets().add(getClass().getResource("game/Game.css").toExternalForm());
+		
 
 		mainStage.setScene(root);
 		mainStage.setFullScreenExitHint("");
@@ -39,5 +51,17 @@ public class MastermindController {
 	
 	public static Stage getStage() {
 		return mainStage;
+	}
+	
+	public static String getCurrentPlayer() {
+		return players[curr];
+	}
+	
+	public static void incrementPlayer() {
+		curr = ++curr % 2;
+	}
+	
+	public static int getRounds() {
+		return rounds++;
 	}
 }

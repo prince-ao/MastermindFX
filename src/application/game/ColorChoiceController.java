@@ -8,15 +8,23 @@ import javafx.geometry.Bounds;
 import javafx.util.Duration;
 import javafx.scene.layout.HBox;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
+import javafx.scene.Cursor;
+import javafx.scene.ImageCursor;
+import javafx.scene.text.Text;
+import javafx.fxml.Initializable;
 import application.MastermindController;
 import java.util.ArrayList;
+import java.net.URL;
+import java.util.ResourceBundle;
 import java.util.List;
 import java.util.Arrays;
+
 //import javafx.scene.layout.AnchorPane;
 
-public class ColorChoiceController {
+public class ColorChoiceController implements Initializable {
 	
 	@FXML
 	Circle Hole1;
@@ -26,13 +34,19 @@ public class ColorChoiceController {
 	Circle Hole3;
 	@FXML
 	Circle Hole4;
-
 	@FXML
 	HBox ConfirmContainer; 
+	@FXML
+	Text playerName;
 
 	private double orgSceneX, orgSceneY;
     private double orgTranslateX, orgTranslateY;
-	
+    
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+    	playerName.setText(MastermindController.getCurrentPlayer());
+    }
+    
 	public void startPegDrag(MouseEvent e) {
 		Circle dragCircle = (Circle) e.getSource();
 		dragCircle.getCenterX();
@@ -96,7 +110,20 @@ public class ColorChoiceController {
 				Button confirm = new Button("Confirm");
 				confirm.setOnMouseClicked(event -> {
 					List<Paint> data = new ArrayList<>(Arrays.asList(Hole1.getFill(), Hole2.getFill(), Hole3.getFill(), Hole4.getFill()));
+					
 					MastermindController.switchView(new GameBoardView(), data);
+				});
+				confirm.setOnMouseEntered(envet -> {
+					Image image = new Image("assets/pointer.png");
+					Cursor cursor = new ImageCursor(image);
+					
+					MastermindController.getStage().getScene().setCursor(cursor);
+				});
+				confirm.setOnMouseExited(envet -> {
+					Image image = new Image("assets/images/cursor.png");
+					Cursor cursor = new ImageCursor(image);
+					
+					MastermindController.getStage().getScene().setCursor(cursor);
 				});
 				ConfirmContainer.getChildren().add(confirm);
 			}

@@ -1,10 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" fx:controller="application.menu.MainMenuController" xmlns:fx="http://javafx.com/fxml/1" id="mainMenuLayout">
+<VBox alignment="CENTER" prefHeight="1001.0" prefWidth="1652.0" styleClass="dark-background" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menu.MainMenuController">
    <children>
-      <Button layoutX="266.0" layoutY="287.0" onAction="#handlePlay" mnemonicParsing="false" text="Play" />
+      <ImageView fitHeight="185.0" fitWidth="606.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/images/mastermind.jpg" />
+         </image>
+         <VBox.margin>
+            <Insets bottom="100.0" />
+         </VBox.margin>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="569.0" prefWidth="1652.0">
+         <children>
+            <ImageView fitHeight="426.0" fitWidth="425.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="100.0" right="100.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../../assets/images/mastermind_logo.jpg" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="359.0" prefWidth="376.0">
+               <children>
+                  <Button mnemonicParsing="false" onMouseClicked="#handlePlay" text="Play">
+                     <font>
+                        <Font name="MS Gothic" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleOptionsMenu" text="OPTIONS">
+                     <font>
+                        <Font name="MS Gothic" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleRules" text="Rules">
+                     <font>
+                        <Font name="MS Gothic" size="36.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
    </children>
-</AnchorPane>
+</VBox>

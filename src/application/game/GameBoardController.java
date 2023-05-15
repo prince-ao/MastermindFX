@@ -1,8 +1,6 @@
 package application.game;
 
 import javafx.fxml.FXML;
-// import javafx.scene.Parent;
-// import javafx.event.ActionEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Circle;
 import javafx.scene.paint.Paint;
@@ -22,33 +20,37 @@ import javafx.scene.text.Font;
 import javafx.animation.PauseTransition;
 import javafx.util.Duration;
 import application.MastermindController;
+import application.end.EndView;
 import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class GameBoardController {
 	
 	
 	@FXML
-	GridPane box1;
+	private GridPane box1;
 	@FXML
-	GridPane box2;
+	private GridPane box2;
 	@FXML
-	GridPane box3;
+	private GridPane box3;
 	@FXML
-	GridPane box4;
+	private GridPane box4;
 	@FXML
-	GridPane box5;
+	private GridPane box5;
 	@FXML
-	GridPane box6;
+	private GridPane box6;
 	@FXML
-	GridPane box7;
+	private GridPane box7;
 	@FXML
-	GridPane box8;
+	private GridPane box8;
 	@FXML
-	GridPane box9;
+	private GridPane box9;
 	@FXML
-	GridPane box10;
+	private GridPane box10;
 	@FXML
-	HBox TextScreen;
+	private HBox TextScreen;
+	
 	
 
 	private int currentCol = 0;
@@ -286,7 +288,7 @@ public class GameBoardController {
 			}
 
 			if(k == 4) {
-				int points = 10 - currentCol;
+				int points = currentCol;
 				Text t = new Text(MastermindController.getCurrentPlayer() + " Won " + points + " points!");
 				MastermindController.incrementPlayer();
 				double fontSize = 35;
@@ -294,9 +296,16 @@ public class GameBoardController {
 				TextScreen.getChildren().add(t);
 				PauseTransition pause = new PauseTransition(Duration.seconds(5));
 				pause.setOnFinished(ss -> {
-					if(MastermindController.getRounds() == 2) {
+					int p = MastermindController.getRounds();
+					if(p == 2) {
+						MastermindController.setPlayer2Points(points);
+						List<Integer> a = new ArrayList<>(Arrays.asList(MastermindController.getPlayer1Points(), MastermindController.getPlayer2Points()));
+						MastermindController.switchView(new EndView(), a);
 						System.out.println("Game Over!");
 					}else {
+						if(p == 1) {
+							MastermindController.setPlayer1Points(points);
+						}
 						MastermindController.switchView(new ColorChoiceView(), null);
 					}
 	            });

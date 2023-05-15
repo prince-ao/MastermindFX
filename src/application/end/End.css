@@ -1,0 +1,26 @@
+#gameover{
+	-fx-text-fill:blue;
+	-fx-font-size:100;
+	-fx-font-family:"Verdana, sans-serif";
+	-fx-backdrop-filter: blur(10px);
+	-fx-text-align:center;
+
+}
+#vbox1{
+	-fx-border-width:3px;
+ -fx-border-style:solid;
+ -fx-border-color:blue;
+	-fx-text-fill:blue;
+	-fx-font-size:50;
+	-fx-backdrop-filter: blur(10px);
+	
+}
+
+#myButton{
+	-fx-border-color:blue;
+	-fx-border-width:3px;
+ -fx-border-style:solid;
+	-fx-font-size:50;
+	-fx-font-family:"Verdana, sans-serif";
+	-fx-text-fill:blue;
+}

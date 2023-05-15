@@ -27,17 +27,17 @@ import java.util.Arrays;
 public class ColorChoiceController implements Initializable {
 	
 	@FXML
-	Circle Hole1;
+	private Circle Hole1;
 	@FXML
-	Circle Hole2;
+	private Circle Hole2;
 	@FXML
-	Circle Hole3;
+	private Circle Hole3;
 	@FXML
-	Circle Hole4;
+	private Circle Hole4;
 	@FXML
-	HBox ConfirmContainer; 
+	private HBox ConfirmContainer; 
 	@FXML
-	Text playerName;
+	private Text playerName;
 
 	private double orgSceneX, orgSceneY;
     private double orgTranslateX, orgTranslateY;

@@ -10,12 +10,15 @@ import javafx.scene.ImageCursor;
 import javafx.scene.paint.Color;
 import javafx.scene.image.Image;
 import java.util.List;
+import application.utils.Name;
 
 public class MastermindController {
 	private static Stage mainStage;
 	private static String[] players = {"Player 1", "Player 2"};
 	private static int curr = 0;
 	private static int rounds = 1;
+	private static int player1Points;
+	private static int player2Points;
 
 	public MastermindController(Stage stage) {
 		mainStage = stage;
@@ -31,6 +34,8 @@ public class MastermindController {
 
 		root.setCursor(cursor);
 		root.getStylesheets().add(getClass().getResource("game/Game.css").toExternalForm());
+		root.getStylesheets().add(getClass().getResource("menu/Menu.css").toExternalForm());
+		root.getStylesheets().add(getClass().getResource("end/End.css").toExternalForm());
 		
 
 		mainStage.setScene(root);
@@ -44,7 +49,7 @@ public class MastermindController {
 			Parent p = v.getView(data);
 			mainStage.getScene().setRoot(p);
 		}catch(Exception e) {
-			System.err.println("Error while switchign to " + v.getName());
+			System.err.println("Error while switchign to " + ((Name)v).getName());
 			e.printStackTrace();
 		}
 	}
@@ -61,7 +66,28 @@ public class MastermindController {
 		curr = ++curr % 2;
 	}
 	
+	public static void reset() {
+		rounds = 0;
+	}
+	
 	public static int getRounds() {
 		return rounds++;
 	}
+
+	public static int getPlayer1Points() {
+		return player1Points;
+	}
+
+	public static void setPlayer1Points(int p) {
+		player1Points = p;
+	}
+
+	public static int getPlayer2Points() {
+		return player2Points;
+	}
+
+	public static void setPlayer2Points(int p) {
+		player2Points = p;
+	}
+	
 }

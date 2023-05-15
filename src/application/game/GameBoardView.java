@@ -3,9 +3,10 @@ package application.game;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import application.utils.View;
+import application.utils.Name;
 import java.util.List;
 
-public class GameBoardView implements View {
+public class GameBoardView extends Name implements View {
 	public String getName() {
 		return "Game Baord";
 	}

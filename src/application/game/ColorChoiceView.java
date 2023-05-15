@@ -5,8 +5,9 @@ import java.util.List;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import application.utils.View;
+import application.utils.Name;
 
-public class ColorChoiceView implements View {
+public class ColorChoiceView extends Name implements View {
 	public String getName() {
 		return "Color Choice";
 	}
@@ -17,6 +18,6 @@ public class ColorChoiceView implements View {
 			return new ColorChoiceController();
 		});
 		return loader.load();
-		
 	}
+	
 }
